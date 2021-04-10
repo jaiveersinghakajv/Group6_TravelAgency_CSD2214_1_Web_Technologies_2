@@ -24,12 +24,3 @@ $(document).ready(function(){
           $('header').removeClass('header-active');
         }
     });
-
-
-
-
-
-
-
-
-
