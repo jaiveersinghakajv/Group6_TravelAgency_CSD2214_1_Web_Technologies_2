@@ -583,6 +583,39 @@ opacity: 0.8; /*Google Chrome*/
   background: #40D3DC;
 }
 
+/* CSS for Review starts */
+
+.review{
+  background: url(../images/Review.jpg), linear-gradient(#0098a1, #0098a1) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+
+.review .heading{
+  color:#fff;
+  padding-bottom: 4rem;
+}
+
+.review .heading span{
+  color:gold;
+}
+
+.review .box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.review .box-container .box{
+  width:35rem;
+  margin:4rem 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 .3rem .5rem #000;
+  background:#fff;
+}
 
 
 
