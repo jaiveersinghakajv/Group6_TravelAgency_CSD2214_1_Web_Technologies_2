@@ -87,6 +87,132 @@
     display: none;
   }
 
+
+  /* CSS for home starts */
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding:2rem 10rem;
+}
+  
+.home .video video{
+    position: absolute;
+    top:0; left:0;
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+  
+.home .content{
+    margin-top: 7rem;
+}
+  
+.home .content h1{
+    font-size: 6.1vw;
+    color:#fff;
+    text-shadow: 0 .3rem .5rem #000;
+}
+  
+.home .content p{
+    font-size: 1.5vw;
+    color:#eee;
+    text-shadow: 0 .3rem .5rem #000;
+    padding-left: 2rem;
+    border-left: .3rem solid #ddd;
+}
+  
+.home .form-container form{
+    margin-top: 8rem;
+    padding:2rem;
+    width:40rem;
+    background-color: #fff;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.9);
+    border-radius: .5rem;
+}
+  
+.home .form-container form h3{
+    color:#333;
+    font-size: 3rem;
+    text-align: center;
+}
+  
+.home .form-container form span{
+    color:#0098a1;
+    font-size: 2.5rem;
+    margin:.5rem 0;
+    display: block;
+}
+  
+.home .form-container form input{
+    width: 100%;
+    padding:0 1rem;
+    height:4rem;
+    font-size: 1.5rem;
+    background:#eee;
+    border:none;
+    outline: none;
+    color:#333;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3) inset;
+    border-radius: .5rem;
+}
+  
+.home .form-container form input[type="submit"]{
+    width:10rem;
+    color:#fff;
+    background:#0098a1;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 2rem;
+    transition: .2s linear;
+}
+  
+.home .form-container form input[type="submit"]:hover{
+    border:.2rem solid #0098a1;
+    color:#0098a1;
+    background: none;
+}
+.home .dropdown{
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+}
+.home .dropdown__hover{
+      display: inline-block;
+      padding: 10px;
+      background-color:#0098a1;
+      color: #ffffff;
+      border:0 solid #0098a1;
+      cursor: pointer;
+}
+.home .dropdown__hover:hover{background-color: #0098a1;;}
+.home .dropdown__menu{
+      position: absolute;
+      display: none;
+      top: 100%;
+      left: 0;
+      min-width: 200px;
+      background-color: #ffffff;
+      color: #0098a1;
+      box-shadow: 0 3px 2px rgba(0,0,0,0.3);
+}
+.home .dropdown:hover .final__dropdown__menu{display: block;}
+.home .dropdown__menu a{
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        border-width: 0;
+        border-top: 1px solid #e0e0e0;
+}
+.home .dropdown__menu a:hover{
+        background-color:#f0f0f0;
+        color: #323b40;
+}
+    
+
 /* CSS for Login starts */
 *{
     margin: 0;
