@@ -618,6 +618,38 @@ opacity: 0.8; /*Google Chrome*/
 }
 
 
+.review .box-container .box .image{
+  margin-top: -5rem;
+}
+
+.review .box-container .box .image img{
+  height:10rem;
+  width:10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: .7rem solid #fff;
+}
+
+.review .box-container .box .content h3{
+  font-size: 2rem;
+  color:#0098a1;
+}
+
+.review .box-container .box .content p{
+  font-size: 1.4rem;
+  color:#333;
+  padding:.5rem 1.5rem;
+}
+
+.review .box-container .box .content .stars i{
+  color:gold;
+  font-size: 1.7rem;
+  padding:1rem .1rem;
+}
+
+
+
+
 
 
 
