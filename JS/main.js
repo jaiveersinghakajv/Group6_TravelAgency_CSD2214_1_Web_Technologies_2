@@ -1,4 +1,3 @@
-
 type="text/javascript">
 	$('.options-02 a').click(function(){
 	$('form').animate({
@@ -13,6 +12,7 @@ $(document).ready(function(){
       $(this).toggleClass('fa-times');
       $('.navbar').toggleClass('nav-toggle');
     });
+
     $(window).on('load scroll',function(){
 
         $('.fa-bars').removeClass('fa-times');
@@ -23,9 +23,26 @@ $(document).ready(function(){
         }else{
           $('header').removeClass('header-active');
         }
-    });
 
-    var counter = 1;
+        $('section').each(function(){
+          var id = $(this).attr('id');
+          var height = $(this).height();
+          var offset = $(this).offset().top - 200;
+          var top = $(window).scrollTop();
+          if(top >= offset && top < offset + height){
+            $('.navbar ul li a').removeClass('active');
+            $('.navbar').find('[data-scroll="' + id + '"]').addClass('active');
+          }
+        });
+    
+      });
+    
+    
+    });
+    
+    
+
+var counter = 1;
 setInterval(function(){
   document.getElementById('radio' + counter).checked = true;
   counter++;
