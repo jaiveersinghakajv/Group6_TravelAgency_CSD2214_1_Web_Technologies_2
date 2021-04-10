@@ -330,8 +330,58 @@ opacity: 0.8; /*Google Chrome*/
   }
 }
 
+/* CSS for Feature starts */
 
+.carousel
+{
+	margin: 10px;
+	width: 100%;
+	overflow: scroll;
+	position: relative;
+	box-shadow: border-box;
+}
 
+.carousel__container
+{
+	white-space: nowrap;
+	margin: 20px 0px;
+	padding-bottom: 10px;
+}
+.carousel-item
+{
+	background-color: #fff;
+	width: 425px;
+	height: 350px;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-right: 10px;
+	display: inline-block;
+	cursor: pointer;
+	transition: 450ms all;
+	transform-origin: center left;
+	position: relative;
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.26);
+}
+
+.carousel-item .info
+{
+	text-align: center;
+	line-height: 20px;
+	margin-top: -10px;
+	font-family:  'Kalam', cursive;
+  font-size: medium;
+	margin-bottom: 10px;
+}
+.carousel-item .info h3
+{
+	color: #333;
+	padding-top: 5px;
+	cursor: pointer;
+	font-family: 'Kalam', cursive;
+  font-size: larger;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
 
 
 
