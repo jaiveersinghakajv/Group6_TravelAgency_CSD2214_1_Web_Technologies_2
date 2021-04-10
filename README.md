@@ -2,6 +2,7 @@
 This project is all about A complete Skylight Travel website design using html, css, javascript, jquery.
 
 The main features of this website are:
+Responsive LOGIN and SIGN UP page using html,css,jquery
 Responsive Home section with beautiful video on background and responsive form in home section.
 Responsive design of a Feature section, including the scrollbar css style, to slide the card.
 Responsive About section.
