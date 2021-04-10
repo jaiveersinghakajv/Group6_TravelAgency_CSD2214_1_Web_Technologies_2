@@ -779,6 +779,51 @@ opacity: 0.8; /*Google Chrome*/
   background:none;  
 }
 
+.footer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+}
+.footer .box{
+  width:30rem;
+  margin:2rem;
+  text-align: center;
+}
+.footer .box:nth-child(1){
+  text-align: left;
+}
+
+.footer .box h3{
+  font-size: 3rem;
+  padding:1rem 0;
+}
+
+.footer .box p{
+  color:#666;
+  font-size: 1.5rem;
+}
+
+.footer .box a{
+  color:#666;
+  font-size: 2rem;
+  display: block;
+  padding:.2rem 0;
+}
+
+.footer .box a:hover{
+  text-decoration: underline;
+}
+
+.footer .credit{
+  width: 85%;
+  padding-top: 1rem;
+  font-size: 2rem;
+  color:#0098a1;
+  text-align: center;
+  border-top: .2rem solid #3333;
+}
+
 
 
 
