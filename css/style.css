@@ -5,27 +5,27 @@
     box-sizing: border-box;
     text-decoration: none;
     text-transform: capitalize;
-  }
+}
   
-  html{
+html{
     overflow-x: hidden;
     font-size: 62.5%;
-  }
+}
   
-  .heading{
+.heading{
     color:#333;
     font-size: 3.5rem;
     padding: 1rem;
     padding-top: 6rem;
     text-align: center;
     letter-spacing: .2rem;
-  }
+}
   
-  .heading span{
+.heading span{
     color:#0098a1;
-  }
+}
   
-  header{
+header{
     width: 96%;
     background:#fff;
     display: flex;
@@ -39,56 +39,56 @@
     padding:.3rem 2rem;
     transition: .2s linear;
     z-index: 1000;
-  }
+}
   
-  .header-active{
+.header-active{
     top:0;
     width:100%;
     border-radius: 0;
-  }
+}
   
-  header .logo{
+header .logo{
     color:#333;
     font-size: 3rem;
-  }
+}
   
-  header .logo span{
+header .logo span{
     color:#0098a1;
-  }
+}
   
-  header .navbar ul{
+header .navbar ul{
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin:0; padding:0;
-  }
+}
   
-  header .navbar ul li{
+header .navbar ul li{
     margin:0 1rem;
-  }
+}
   
-  header .navbar ul li a{
+header .navbar ul li a{
     font-size: 2rem;
     color:#333;
     transition: .2s linear;
-  }
+}
   
   
-  header .navbar ul li .active,
-  header .navbar ul li a:hover{
+header .navbar ul li .active,
+header .navbar ul li a:hover{
     color: #0098a1;
-  }
+}
   
-  header .fa-bars{
+header .fa-bars{
     font-size: 3rem;
     color:#0098a1;
     cursor: pointer;
     display: none;
-  }
+}
 
 
-  /* CSS for home starts */
+/* CSS for home starts */
 .home{
     min-height: 100vh;
     display: flex;
@@ -219,7 +219,8 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-  }
+}
+
 .form{
   z-index: 1;
   font-family: "Poppins", sans-serif;
@@ -895,15 +896,15 @@ opacity: 0.8; /*Google Chrome*/
 /* media queries  */
 @media (max-width:768px){
 
-    html{
+html{
       font-size: 55%;
-    }
+}
   
-    header .fa-bars{
+header .fa-bars{
       display: block;
-    }
+}
   
-    header .navbar{
+header .navbar{
       position: fixed;
       top:-100rem; left:50%;
       transform: translateX(-50%);
@@ -914,28 +915,97 @@ opacity: 0.8; /*Google Chrome*/
       z-index: 1000;
       transition: .2s linear;
       opacity: 0;
-    }
+}
   
-    header .navbar ul{
+header .navbar ul{
       flex-flow: column;
-    }
+}
   
-    header .navbar ul li{
+header .navbar ul li{
       margin:1rem 0;
       width: 100%;
       text-align: center;
-    }
+}
   
-    header .navbar ul li a{
+header .navbar ul li a{
       display: block;
       font-size: 3rem;
-    }
+}
   
-    header .nav-toggle{
+header .nav-toggle{
       top:5.5rem;
       opacity: 1;
-    }
 }
+.about .row{
+      flex-flow: column;
+}
+  
+.about .row .image img{
+      width: 90vw;
+}
+  
+.about .row .content{
+      text-align: center;
+}
+  
+.about .row .content .btn1{
+      margin-right: 0;
+}
+.gallery .box-container .box{
+      flex-flow: column;
+      width: 90%;
+}
+  
+.gallery .box-container .box:nth-child(even){
+      flex-flow: column;
+}
+  
+.gallery .box-container .box .image{
+      width: 100%;
+}
+  
+.gallery .box-container .box .content{
+      width: 100%;
+}
+  
+.gallery .box-container .box:nth-child(even) .content{
+      text-align: left;
+}
+  
+.contact .row{
+      flex-flow: column;
+      align-items: flex-start;
+}
+  
+.contact .row .contact-form-container{
+      width:90%; 
+      margin:0 auto;
+}
+  
+.newsletter p{
+      padding:1rem 0;
+}
+  
+.newsletter form input[type="email"]{
+      width: 100%;
+      margin-bottom: 1rem;
+}
+.newsletter .box form{
+      width: 100%;
+}
+  
+.footer{
+      flex-flow: column;
+}
+    
+  
+.footer .credit{
+      text-align: center;
+      padding-bottom: 3rem;
+}
+  
+}    
+
 @media (max-width:500px){
 
     .home .form-container{
@@ -953,9 +1023,11 @@ opacity: 0.8; /*Google Chrome*/
     .contact form{
       width: 90%;
     }
-  
     .contact form .inputBox input{
       width: 100%;
     }
   }
   
+    .contact form .inputBox input{
+      width: 100%;
+    }
