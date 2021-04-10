@@ -382,6 +382,77 @@ opacity: 0.8; /*Google Chrome*/
 	letter-spacing: 1px;
 	font-size: 14px;
 }
+.carousel-item .info .price
+{
+	font-size: 13px;
+	color: #0062ff;
+	letter-spacing: 0.5px;
+}
+
+.carousel-item~ .carousel-item
+{
+	transform: translate3d(20px,0,0);
+}
+
+.carousel__container:hover .carousel-item:hover
+{
+	transform: scale(1.09);
+	opacity: 1;
+}
+
+.carousel-item__img
+{
+	width: 100%;
+	height: 210px;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 0.5px 0.5px 0 rgba(0,0,0,0.26);
+}
+.carousel::-webkit-scrollbar
+{
+	height: 10px;
+}
+.carousel::-webkit-scrollbar-track
+{
+	-webkit-:inset 0 0 6px rgba(0,0,0,0.26);
+	border-radius: 10px;
+}
+.carousel::-webkit-scrollbar-track-piece
+{
+	max-width: 200px;
+}
+.carousel::-webkit-scrollbar-thumb
+{
+	border-radius: 50px;
+	background-color: #fff;
+	background-image: -webkit-gradient(linear,40% 0%,75% 84%, from(#a3d6ff), to(#6fe9ff), color-stop(0.6, #09c6ff));
+}
+.discount{
+  position: absolute;
+  top:1rem; left: 1rem;
+  display: block;
+  height:3.5rem;
+  width:6rem;
+  background: #ff3300;
+  color:#fff;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+}  
+.buy-btn{
+	background-color: #FFFFFF;
+	color:#252525;
+	font-weight: 500;
+	letter-spacing: 1px;
+	font-family: calibri;
+	border-radius: 40px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+}
+.buy-btn:hover{
+	color:#FFFFFF;
+	background-color: #6e6e6e;
+	transition: all ease 0.3s;
+}
 
 
 
