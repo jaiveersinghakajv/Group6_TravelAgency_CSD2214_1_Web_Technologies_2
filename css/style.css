@@ -724,6 +724,61 @@ opacity: 0.8; /*Google Chrome*/
   background:#0098a1;
 }
 
+.newsletter{
+  padding:2rem;
+  background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(../images/Quark-Antarctica-2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.newsletter h1{
+  font-size: 5rem;
+  color:#fff;
+  text-shadow: 0 .3rem .5rem #000;
+}
+
+.newsletter p{
+  font-size: 2rem;
+  color:#eee;
+  padding:1rem 15rem;
+}
+
+.newsletter form input{
+  outline:none;
+  border:none;
+  height:5rem;
+}
+
+.newsletter form input[type="email"]{
+  width:40rem;
+  padding:0 1rem;
+  color:#fff;
+  background:rgba(255,255,255,.2);
+  font-size: 2rem;
+}
+
+.newsletter form input[type="email"]::placeholder{
+  color:#ccc;
+}
+
+.newsletter form input[type="submit"]{
+  width:20rem;
+  color:#fff;
+  background:#0098a1;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: -1.1rem;
+  transition: .2s;
+}
+
+.newsletter form input[type="submit"]:hover{
+  border:.2rem solid #fff;
+  color:#fff;
+  background:none;  
+}
+
 
 
 
